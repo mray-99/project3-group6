@@ -19,3 +19,6 @@ counter = 0
 counter2 = 0
 
 for line in fh:
+  counter += 1
+  if "Apr" in line and "1995" in line:
+    counter2 += 1
