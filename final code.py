@@ -11,3 +11,7 @@ local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE, lambda x,y,z: print('.',
 
 # Alt. 2: a progress bar with reduced output (every 1000 blocks)
 local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE, lambda x,y,z: print('.', end='', flush=True) if x % 100 == 0 else False)
+
+FILE_NAME = 'local_copy.log'
+
+fh = open(FILE_NAME)
