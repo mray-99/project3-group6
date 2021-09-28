@@ -31,3 +31,4 @@ for line in fh:
   elif "Aug" in line and "1995" in line:
     counter2 += 1
 print("There have been", counter, "total requests.")
+print ("There have been", counter2, "requests in the last 6 months.")
