@@ -24,4 +24,7 @@ for line in fh:
     counter2 += 1
   elif "May" in line and "1995" in line:
     counter2 += 1
+  elif "Jun" in line and "1995" in line:
+    counter2 += 1
+  elif "Jul" in line and "1995" in line:
  
