@@ -33,6 +33,9 @@ for line in fh:
   elif "Sep" in line and "1995" in line:
     counter2 += 1
   elif "Oct" in line and "1995" in line:
-    counter1 += 1
+    counter2 += 1
+  else:
+    counter2 += 0
+  
 print("There have been", counter, "total requests!")
 print ("There have been", counter2, "requests in the last 6 months!")
