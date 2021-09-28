@@ -30,3 +30,4 @@ for line in fh:
     counter2 += 1
   elif "Aug" in line and "1995" in line:
     counter2 += 1
+print("There have been", counter, "total requests.")
