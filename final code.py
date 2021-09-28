@@ -30,5 +30,5 @@ for line in fh:
     counter2 += 1
   elif "Aug" in line and "1995" in line:
     counter2 += 1
-print("There have been", counter, "total requests.")
-print ("There have been", counter2, "requests in the last 6 months.")
+print("There have been", counter, "total requests!")
+print ("There have been", counter2, "requests in the last 6 months!")
