@@ -15,3 +15,7 @@ local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE, lambda x,y,z: print('.',
 FILE_NAME = 'local_copy.log'
 
 fh = open(FILE_NAME)
+counter = 0
+counter2 = 0
+
+for line in fh:
