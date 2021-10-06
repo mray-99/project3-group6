@@ -61,3 +61,10 @@ friday_counter = 0
 saturday_counter = 0
 sunday_counter = 0
 sunday_counter = 0
+
+for line in fh2:
+  parts = regex.split(line)
+  try:
+    month_name = parts[2]
+    month_num = datetime.strptime(month_name, '%b').month
+    log_date = date(year=int(parts[3]), month=month_num, day=int(parts[1]))
