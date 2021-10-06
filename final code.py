@@ -52,3 +52,12 @@ from datetime import datetime
 from datetime import date
 import re
 regex = re.compile('\[(\d{2})/([A-Za-z]{3,4})/(\d{4}):(\d{2}:\d{2}:\d{2}).+\] \"([A-Z]{3,6}) (.+) HTTP/1.0\" (\d{3}) .*')
+
+monday_counter= 0
+tuesday_counter = 0
+wednesday_counter = 0
+thursday_counter = 0
+friday_counter = 0
+saturday_counter = 0
+sunday_counter = 0
+sunday_counter = 0
