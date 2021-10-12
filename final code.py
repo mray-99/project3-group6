@@ -51,6 +51,11 @@ import datetime
 from datetime import datetime
 from datetime import date
 import re
+import calendar
+import datetime
+from datetime import datetime
+from datetime import date
+
 regex = re.compile('\[(\d{2})/([A-Za-z]{3,4})/(\d{4}):(\d{2}:\d{2}:\d{2}).+\] \"([A-Z]{3,6}) (.+) HTTP/1.0\" (\d{3}) .*')
 
 monday_counter= 0
