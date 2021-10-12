@@ -73,3 +73,12 @@ for line in fh2:
     month_name = parts[2]
     month_num = datetime.strptime(month_name, '%b').month
     log_date = date(year=int(parts[3]), month=month_num, day=int(parts[1]))
+
+#Question 4
+
+fh4 = open(FILE_NAME)
+
+for line in fh4:
+  total1 = re.findall(r"\b(3\d\d)\b",fh4.read())
+RequestTotal2 = (len(total1) / 726736) * 100
+print ( "{}% were redirected.".format(round(RequestTotal2)))
