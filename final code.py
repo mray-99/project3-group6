@@ -74,6 +74,25 @@ for line in fh2:
     month_num = datetime.strptime(month_name, '%b').month
     log_date = date(year=int(parts[3]), month=month_num, day=int(parts[1]))
 
+     
+#questions 3 
+
+#Pattern1 = r"\b(4\d\d)\b"
+
+fh3 = open(FILE_NAME)
+
+
+
+
+for line in fh3:
+  total = re.findall(r"\b(4\d\d)\b",fh3.read())
+RequestTotal = (len(total) / 726736) * 100
+print ( "{}% were not successful.".format(round(RequestTotal)))
+print("")
+    
+    
+    
+    
 #Question 4
 
 fh4 = open(FILE_NAME)
