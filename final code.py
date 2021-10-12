@@ -158,3 +158,9 @@ for line in fh5:
     clean_log.append(line[line.index("GET")+4:line.index("HTTP")])
   except:
     pass
+
+for count in counter.most_common(726736):
+  print(str(count[1]) + " " + str(count[0])) 
+
+print("The most-requested file is index.html")
+print("The least-requested file is 12180.html")
