@@ -73,6 +73,48 @@ for line in fh2:
     month_name = parts[2]
     month_num = datetime.strptime(month_name, '%b').month
     log_date = date(year=int(parts[3]), month=month_num, day=int(parts[1]))
+    #dt = datetime.strptime(log_date,"%d/%b/%Y")
+    #print(findDay(date))
+    #week_num=datetime.log_date.weekday()
+    #print(log_date.strftime("%w"))
+    day_num = int(log_date.strftime("%w"))
+    if day_num == 0:
+      monday_counter += 1
+    elif day_num == 1:
+      tuesday_counter += 1
+    elif day_num == 2:
+      wednesday_counter += 1
+    elif day_num == 3:
+      thursday_counter += 1
+    elif day_num == 4:
+      friday_counter += 1
+    elif day_num == 5:
+      saturday_counter += 1
+    else:
+      sunday_counter += 1 
+  except:
+    pass
+print("")
+print("There were",monday_counter,"requests made on Mondays.")
+print("There were",tuesday_counter,"requests made on Tuesdays.")
+print("There were",wednesday_counter,"requests made on Wednesdays.")  
+print("There were",thursday_counter,"requests made on Thursdays.")
+print("There were",friday_counter, "requests made on Fridays.")
+print("There were", saturday_counter, "requests made on Saturdays.")
+print("There were", sunday_counter, "requests made on Sundays.")
+print("")
+
+#question 2
+
+from statistics import mean
+
+number_list = [monday_counter, tuesday_counter, wednesday_counter, thursday_counter, friday_counter, saturday_counter, sunday_counter]
+avg = mean(number_list)
+avg2 = mean(number_list)*4 
+print("the average is " , round(avg))
+print("the monthly average is " , round(avg2)) 
+
+# Driver program
 
      
 #questions 3 
