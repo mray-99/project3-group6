@@ -159,6 +159,8 @@ for line in fh5:
   except:
     pass
 
+counter = collections.Counter(clean_log)
+
 for count in counter.most_common(726736):
   print(str(count[1]) + " " + str(count[0])) 
 
