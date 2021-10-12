@@ -46,10 +46,6 @@ print ("There have been", counter2, "requests in the last 6 months!")
 fh2 = open(FILE_NAME)
 
 
-import calendar
-import datetime
-from datetime import datetime
-from datetime import date
 import re
 import calendar
 import datetime
