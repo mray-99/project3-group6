@@ -143,3 +143,18 @@ for line in fh4:
   total1 = re.findall(r"\b(3\d\d)\b",fh4.read())
 RequestTotal2 = (len(total1) / 726736) * 100
 print ( "{}% were redirected.".format(round(RequestTotal2)))
+
+
+# Question 5 
+
+import collections
+
+fh5 = open(FILE_NAME, "r") 
+
+clean_log = []
+
+for line in fh5:
+  try:
+    clean_log.append(line[line.index("GET")+4:line.index("HTTP")])
+  except:
+    pass
